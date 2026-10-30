@@ -1,0 +1,23 @@
+{
+  "accuracy": 0.9518,
+  "f1_weighted": 0.9507,
+  "f1_failed": 0.7574,
+  "cv_f1_mean": 0.95,
+  "cv_f1_std": 0.003,
+  "n_train": 9448,
+  "n_test": 2363,
+  "n_failed_test": 247,
+  "confusion_matrix": [
+    [
+      178,
+      69
+    ],
+    [
+      45,
+      2071
+    ]
+  ],
+  "leakage_cols_removed": [
+    "delai_formation_certif_jours"
+  ]
+}

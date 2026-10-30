@@ -1,0 +1,358 @@
+{
+  "dept_summary": [
+    {
+      "department": "RH & Learning",
+      "total": 3169,
+      "passed": 2837,
+      "failed": 332,
+      "pass_rate": 89.52,
+      "avg_score": 74.59
+    },
+    {
+      "department": "Software Engineering",
+      "total": 2529,
+      "passed": 2257,
+      "failed": 272,
+      "pass_rate": 89.24,
+      "avg_score": 74.55
+    },
+    {
+      "department": "Data & AI",
+      "total": 1833,
+      "passed": 1652,
+      "failed": 181,
+      "pass_rate": 90.13,
+      "avg_score": 74.5
+    },
+    {
+      "department": "Sales",
+      "total": 1793,
+      "passed": 1600,
+      "failed": 193,
+      "pass_rate": 89.24,
+      "avg_score": 74.36
+    },
+    {
+      "department": "Infrastructure",
+      "total": 1210,
+      "passed": 1095,
+      "failed": 115,
+      "pass_rate": 90.5,
+      "avg_score": 74.28
+    },
+    {
+      "department": "Finance & Controlling",
+      "total": 574,
+      "passed": 506,
+      "failed": 68,
+      "pass_rate": 88.15,
+      "avg_score": 74.56
+    },
+    {
+      "department": "Cloud & DevOps",
+      "total": 193,
+      "passed": 175,
+      "failed": 18,
+      "pass_rate": 90.67,
+      "avg_score": 75.01
+    },
+    {
+      "department": "Cybersecurity",
+      "total": 178,
+      "passed": 158,
+      "failed": 20,
+      "pass_rate": 88.76,
+      "avg_score": 75.39
+    },
+    {
+      "department": "Consulting",
+      "total": 178,
+      "passed": 157,
+      "failed": 21,
+      "pass_rate": 88.2,
+      "avg_score": 74.25
+    },
+    {
+      "department": "PMO",
+      "total": 152,
+      "passed": 138,
+      "failed": 14,
+      "pass_rate": 90.79,
+      "avg_score": 75.48
+    }
+  ],
+  "prov_summary": [
+    {
+      "provider": "NTT DATA",
+      "total": 1823,
+      "passed": 1627,
+      "failed": 196,
+      "pass_rate": 89.25,
+      "avg_score": 74.68
+    },
+    {
+      "provider": "Scrum.org",
+      "total": 1480,
+      "passed": 1321,
+      "failed": 159,
+      "pass_rate": 89.26,
+      "avg_score": 74.39
+    },
+    {
+      "provider": "MongoDB University",
+      "total": 1352,
+      "passed": 1225,
+      "failed": 127,
+      "pass_rate": 90.61,
+      "avg_score": 74.52
+    },
+    {
+      "provider": "Coursera",
+      "total": 1309,
+      "passed": 1174,
+      "failed": 135,
+      "pass_rate": 89.69,
+      "avg_score": 74.33
+    },
+    {
+      "provider": "Udemy",
+      "total": 1249,
+      "passed": 1112,
+      "failed": 137,
+      "pass_rate": 89.03,
+      "avg_score": 74.83
+    },
+    {
+      "provider": "Kaggle",
+      "total": 1244,
+      "passed": 1106,
+      "failed": 138,
+      "pass_rate": 88.91,
+      "avg_score": 74.12
+    },
+    {
+      "provider": "Microsoft",
+      "total": 1243,
+      "passed": 1118,
+      "failed": 125,
+      "pass_rate": 89.94,
+      "avg_score": 74.56
+    },
+    {
+      "provider": "DeepLearning.AI",
+      "total": 1159,
+      "passed": 1041,
+      "failed": 118,
+      "pass_rate": 89.82,
+      "avg_score": 74.53
+    },
+    {
+      "provider": "Amazon",
+      "total": 950,
+      "passed": 851,
+      "failed": 99,
+      "pass_rate": 89.58,
+      "avg_score": 74.81
+    }
+  ],
+  "correlation": {
+    "labels": [
+      "Final Score",
+      "Final Exam (40%)",
+      "Quiz (20%)",
+      "Assignment (20%)",
+      "Homework (20%)"
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.493,
+        0.508,
+        0.488,
+        0.511
+      ],
+      [
+        0.493,
+        1.0,
+        -0.009,
+        -0.012,
+        0.004
+      ],
+      [
+        0.508,
+        -0.009,
+        1.0,
+        -0.003,
+        0.028
+      ],
+      [
+        0.488,
+        -0.012,
+        -0.003,
+        1.0,
+        -0.01
+      ],
+      [
+        0.511,
+        0.004,
+        0.028,
+        -0.01,
+        1.0
+      ]
+    ]
+  },
+  "features": [
+    {
+      "name": "score_exam",
+      "label": "Practice Exam Score (40% Weight)",
+      "importance": 0.362,
+      "type": "numeric",
+      "rank": 1
+    },
+    {
+      "name": "score_quiz",
+      "label": "Quiz Score (20% Weight)",
+      "importance": 0.214,
+      "type": "numeric",
+      "rank": 2
+    },
+    {
+      "name": "score_homework",
+      "label": "Homework Score (20% Weight)",
+      "importance": 0.168,
+      "type": "numeric",
+      "rank": 3
+    },
+    {
+      "name": "score_assignment",
+      "label": "Assignment Score (20% Weight)",
+      "importance": 0.141,
+      "type": "numeric",
+      "rank": 4
+    },
+    {
+      "name": "skill_count",
+      "label": "Prior Skill Breadth Count",
+      "importance": 0.039,
+      "type": "numeric",
+      "rank": 5
+    },
+    {
+      "name": "duree_formation_jours",
+      "label": "Training Course Duration (Days)",
+      "importance": 0.031,
+      "type": "numeric",
+      "rank": 6
+    },
+    {
+      "name": "nb_certifs_passees",
+      "label": "Cumulative Certifications Completed",
+      "importance": 0.018,
+      "type": "numeric",
+      "rank": 7
+    },
+    {
+      "name": "dept_Data & AI",
+      "label": "Dept: Data & AI",
+      "importance": 0.006,
+      "type": "categorical",
+      "rank": 8
+    },
+    {
+      "name": "dept_Software Engineering",
+      "label": "Dept: Software Engineering",
+      "importance": 0.005,
+      "type": "categorical",
+      "rank": 9
+    },
+    {
+      "name": "provider_Amazon",
+      "label": "Provider: Amazon Web Services",
+      "importance": 0.004,
+      "type": "categorical",
+      "rank": 10
+    },
+    {
+      "name": "provider_Microsoft",
+      "label": "Provider: Microsoft Learn",
+      "importance": 0.003,
+      "type": "categorical",
+      "rank": 11
+    },
+    {
+      "name": "provider_DeepLearning.AI",
+      "label": "Provider: DeepLearning.AI",
+      "importance": 0.003,
+      "type": "categorical",
+      "rank": 12
+    },
+    {
+      "name": "provider_NTT DATA",
+      "label": "Provider: NTT DATA Academy",
+      "importance": 0.003,
+      "type": "categorical",
+      "rank": 13
+    },
+    {
+      "name": "dept_Cloud & DevOps",
+      "label": "Dept: Cloud & DevOps",
+      "importance": 0.002,
+      "type": "categorical",
+      "rank": 14
+    },
+    {
+      "name": "provider_Coursera",
+      "label": "Provider: Coursera",
+      "importance": 0.001,
+      "type": "categorical",
+      "rank": 15
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.005,
+      "tpr": 0.62
+    },
+    {
+      "fpr": 0.012,
+      "tpr": 0.78
+    },
+    {
+      "fpr": 0.021,
+      "tpr": 0.86
+    },
+    {
+      "fpr": 0.038,
+      "tpr": 0.92
+    },
+    {
+      "fpr": 0.072,
+      "tpr": 0.952
+    },
+    {
+      "fpr": 0.12,
+      "tpr": 0.974
+    },
+    {
+      "fpr": 0.18,
+      "tpr": 0.985
+    },
+    {
+      "fpr": 0.3,
+      "tpr": 0.992
+    },
+    {
+      "fpr": 0.5,
+      "tpr": 0.998
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "auc": 0.982
+}

@@ -1,0 +1,13 @@
+{
+  "r2": 0.9942,
+  "mae": 0.2899,
+  "cv_r2_mean": 0.9972,
+  "cv_r2_std": 0.0002,
+  "n_train": 9448,
+  "n_test": 2362,
+  "score_mean": 74.53,
+  "score_std": 7.21,
+  "leakage_cols_removed": [
+    "delai_formation_certif_jours"
+  ]
+}

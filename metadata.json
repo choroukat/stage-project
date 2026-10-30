@@ -1,0 +1,6 @@
+{
+  "name": "NTT DATA — HR Intelligence & ML Data Science Workbench",
+  "description": "Professional machine learning platform and data science studio for HR intelligence, certification success classification, score regression, cold-start KNN peer imputation, and skill-vector project matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
